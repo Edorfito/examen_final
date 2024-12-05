@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resolver Tri&aacute;ngulo</title>
+  <link rel="stylesheet" href="./css/dw.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Calculadora de Tri&aacute;ngulos</h1>
+    <p>Resuelve cualquier tri&aacute;ngulo conociendo sus lados.</p>
+  </header>
+
+  <main class="main-container">
+    <section class="form-section">
+      <h2>Ingresa los datos del tri&aacute;ngulo</h2>
+      <form id="triangle-form">
+        <label for="sideA">Lado a</label>
+        <input type="number" id="sideA" placeholder="Ingresa el lado a" required>
+        <label for="sideB">Lado b</label>
+        <input type="number" id="sideB" placeholder="Ingresa el lado b" required>
+        <label for="sideC">Lado c</label>
+        <input type="number" id="sideC" placeholder="Ingresa el lado c" required>
+        <button type="button" id="solveTriangle">Calcular</button>
+      </form>
+    </section>
+
+    <section class="results-section">
+      <h2>Resultados</h2>
+      <div class="results">
+        <div class="box">
+          <h3>&Aacute;ngulos</h3>
+          <p>&Aacute;ngulo a: <span id="angleA"></span>°</p>
+          <p>&Aacute;ngulo b: <span id="angleB"></span>°</p>
+          <p>&Aacute;ngulo c: <span id="angleC"></span>°</p>
+        </div>
+
+        <div class="box">
+          <h3>Medianas</h3>
+          <p>Mediana ma: <span id="medianaA"></span></p>
+          <p>Mediana mb: <span id="medianaB"></span></p>
+          <p>Mediana mc: <span id="medianaC"></span></p>
+        </div>
+
+        <div class="box">
+          <h3>Bisectrices</h3>
+          <p>Bisectriz ta: <span id="bisectrizA"></span></p>
+          <p>Bisectriz tb: <span id="bisectrizB"></span></p>
+          <p>Bisectriz tc: <span id="bisectrizC"></span></p>
+        </div>
+
+        <div class="box">
+          <h3>Alturas</h3>
+          <p>Altura ha: <span id="alturaA"></span></p>
+          <p>Altura hb: <span id="alturaB"></span></p>
+          <p>Altura hc: <span id="alturaC"></span></p>
+        </div>
+
+        <div class="box">
+          <h3>Per&iacute;metro y &Aacute;rea</h3>
+          <p>Per&iacute;metro: <span id="perimetro"></span></p>
+          <p>&Aacute;rea: <span id="area"></span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Calculadora de Tri&aacute;ngulos. Elaborado por: EOFT-SENCICO</p>
+  </footer>
+
+  <script src="./js/dw.js"></script>
+</body>
+</html>

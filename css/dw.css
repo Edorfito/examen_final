@@ -1,0 +1,192 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1rem;
+  margin: 10px 0 0;
+}
+
+/* Formulario */
+.form-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px; /* Ancho fijo para que coincida con la caja del botón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+  text-align: center;
+}
+
+form {
+  width: 100%; /* Asegura que los elementos dentro ocupen el ancho total de la caja */
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+form input {
+  width: 100%; /* Ancho fijo que coincide con la caja del botón */
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%; /* Asegura que el botón sea igual de ancho que los inputs */
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Resultados */
+.results-section {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 400px; /* Mismo ancho que las cajas del formulario */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+.results .box {
+  width: 100%; /* Ancho igual al contenedor */
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Para centrar el contenido */
+  flex-direction: column; /* Asegura que las líneas de texto estén en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto dentro */
+  transition: transform 0.2s;
+}
+
+.results .box:hover {
+  transform: scale(1.05);
+}
+
+.results .box h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.results .box p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+
+/* Pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .form-section, .results-section {
+    max-width: 100%; /* Ocupa todo el ancho disponible en móviles */
+    padding: 15px;
+  }
+
+  form input, form button {
+    font-size: 0.9rem;
+  }
+
+  .results .box {
+    max-width: 100%;
+  }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .results {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+  }
+}
